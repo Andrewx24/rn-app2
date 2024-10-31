@@ -2,16 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    body {
-      @apply bg-gray-100;
-    }
-   }
-
+  .body {
+    @apply bg-gray-50;
+  }
+}
 
 @layer components {
-    .btn {
-      @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-    }
-   }
+  .card {
+    @apply bg-white rounded-xl p-4;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .btn {
+    @apply bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg
+           hover:bg-blue-600 transition-colors duration-200;
+  }
+
+  .input {
+    @apply bg-white border border-gray-200 rounded-lg px-4 py-2 w-full
+           focus:border-blue-500 focus:ring-1 focus:ring-blue-500
+           transition-all duration-200;
+  }
+  
+  .container {
+    @apply p-4 bg-gray-50 min-h-screen;
+  }
+}
