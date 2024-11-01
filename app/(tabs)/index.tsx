@@ -20,11 +20,7 @@ export default function Index() {
         </Text>
       </Link>
       
-      <Image 
-        source={require('@/assets/images/icon.png')} 
-        className="w-[100px] h-[100px]"
-        resizeMode="contain"
-      />
+    
     </View>
   );
 }
