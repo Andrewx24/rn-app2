@@ -16,7 +16,8 @@ export default function Page() {
         </Link>
         <Link href="/sign-up">
           <Text>Sign Up</Text>
-        </Link>
+       </Link>
+       <Text> Hello Emma, who am I </Text>
       </SignedOut>
     </View>
   )
