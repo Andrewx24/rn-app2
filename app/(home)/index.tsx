@@ -3,14 +3,11 @@ import { Link } from 'expo-router'
 import { Text, View } from 'react-native'
 
 export default function Page() {
-  const { user } = useUser()
-
+ 
   return (
     <View>
-      <SignedIn>
-        <Text>Hello {user?.emailAddresses[0].emailAddress}</Text>
-      </SignedIn>
-      <SignedOut>
+   
+    
         <Link href="/sign-in">
           <Text>Sign In</Text>
         </Link>
@@ -18,7 +15,8 @@ export default function Page() {
           <Text>Sign Up</Text>
        </Link>
        <Text> Hello Emma, who am I </Text>
-      </SignedOut>
+       
+    
     </View>
   )
 }
